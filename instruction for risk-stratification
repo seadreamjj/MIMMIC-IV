@@ -1,0 +1,10 @@
+Develop a model to stratify patients according to their risk of contracting/developing certain conditions.
+The choice of condition is entirely upto you. You could choose to stratify patients according to their risk of developing heart attacks, diabetes etc. 
+Report which features are of interest to your chosen pathology. 
+Also report which features strongly predict the different risk classes, for instance certain features could strongly predict higher risk categories, but weakly predict lower risk, while other features could better predict the lower risk categories.
+
+I predict gestational diabetes in this model.
+In this model, I draw the heatmap to detect the correlations first, and use permutation-based XGBoost method to filter the feature. 
+After the selection of the feature, I try the logistic regression model and xgb model. 
+Comparing result seems the performance result of xgb model is better. 
+Finally, shap is used to evaluate the contribution of each feature in different outputs.
